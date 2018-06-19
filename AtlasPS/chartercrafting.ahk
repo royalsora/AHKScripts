@@ -72,13 +72,13 @@ Loop {
 		MouseMove, cx, cy, 0
 		MouseClick, Right
 		
-		ImageSearch, x, y, 0,0,764,501,%A_ScriptDir%\tradecharter.png ;trade her
+		ImageSearch, x, y, 0,0,764,501,%A_ScriptDir%\img\tradecharter.png ;trade her
 		if(x>0){
 			MouseMove, x, y, 0
 			MouseClick, Left
 			Sleep, 5000
 			Loop, 3000{
-				ImageSearch, ax, ay, 0,0,764,501,%A_ScriptDir%\bucketofsand.png ;buy buckets of sand
+				ImageSearch, ax, ay, 0,0,764,501,%A_ScriptDir%\img\bucketofsand.png ;buy buckets of sand
 				if(ax > 0){
 					ActiveText = Purchasing sand
 					GuiControl,,MT, %ActiveText%
@@ -86,7 +86,7 @@ Loop {
 					MouseMove, ax, ay, 0
 					MouseClick, Right
 					
-					ImageSearch, a2x, a2y, 0,0,764,501,%A_ScriptDir%\buy10.png
+					ImageSearch, a2x, a2y, 0,0,764,501,%A_ScriptDir%\img\buy10.png
 					
 					if(a2x >0){
 						MouseMove, a2x, a2y, 0
@@ -95,7 +95,7 @@ Loop {
 				}
 				Sleep, 1000
 				
-				ImageSearch, bx, by, 0,0,764,501,%A_ScriptDir%\sodaash.png ;buy soda ash
+				ImageSearch, bx, by, 0,0,764,501,%A_ScriptDir%\img\sodaash.png ;buy soda ash
 				if(bx > 0){
 					ActiveText = Purchasing ash
 					GuiControl,,MT, %ActiveText%
@@ -103,7 +103,7 @@ Loop {
 					MouseMove, bx, by, 0
 					MouseClick, Right
 					
-					ImageSearch, b2x, b2y, 0,0,764,501,%A_ScriptDir%\buy10.png
+					ImageSearch, b2x, b2y, 0,0,764,501,%A_ScriptDir%\img\buy10.png
 					
 					if(b2x >0){
 						MouseMove, b2x, b2y, 0
@@ -123,7 +123,7 @@ Loop {
 		Send, {F4}
 		Sleep, 300
 		
-		ImageSearch, x, y, 0,0,764,501,%A_ScriptDir%\superglassmake.png ;cast superglass
+		ImageSearch, x, y, 0,0,764,501,%A_ScriptDir%\img\superglassmake.png ;cast superglass
 		Sleep, 300
 		if(x>0){
 			MouseMove, x, y, 0
@@ -136,7 +136,7 @@ Loop {
 		ActiveText = Blowing glass
 		GuiControl,,MT, %ActiveText%
 		
-		ImageSearch, x, y, 0, 0, 764, 501, %A_ScriptDir%\glassblowingpipe.png ;click glassblowingpipe
+		ImageSearch, x, y, 0, 0, 764, 501, %A_ScriptDir%\img\glassblowingpipe.png ;click glassblowingpipe
 		if(x>0){
 			MouseMove, x,y,0
 			MouseClick, Left
@@ -144,7 +144,7 @@ Loop {
 		expGained += 2000
 		GuiControl,,BN, %expGained% ;%cr% (%option%) Gained: %expGained%
 		
-		ImageSearch, x, y, 0, 0, 764, 501, %A_ScriptDir%\moltenglass.png ;click moltenglass
+		ImageSearch, x, y, 0, 0, 764, 501, %A_ScriptDir%\img\moltenglass.png ;click moltenglass
 		if(x > 0){
 			MouseMove, x,y,0
 			MouseClick, Left
@@ -154,7 +154,7 @@ Loop {
 		Send, %option%
 		
 		Loop, 3000{
-			ImageSearch, x,y,0,0,764,501, %A_ScriptDir%\moltenglass.png ;stop creation sequence when there is no more moltenglass in the screen
+			ImageSearch, x,y,0,0,764,501, %A_ScriptDir%\img\moltenglass.png ;stop creation sequence when there is no more moltenglass in the screen
 			if(!(x>0)){
 				break
 			}
@@ -176,9 +176,9 @@ Loop {
 		
 		Loop, 3000{
 			if(option == 7){
-			ImageSearch, x, y, 0,0,764,501,%A_ScriptDir%\lanternlens.png ;drop lantern lenses
+			ImageSearch, x, y, 0,0,764,501,%A_ScriptDir%\img\lanternlens.png ;drop lantern lenses
 			}else{
-			ImageSearch, x, y, 0,0,764,501,%A_ScriptDir%\dorgorb.png ;drop dorgorbs
+			ImageSearch, x, y, 0,0,764,501,%A_ScriptDir%\img\dorgorb.png ;drop dorgorbs
 			}	
 			if(x>0){
 				MouseMove, x, y, 0
