@@ -35,7 +35,7 @@ PixelSearch, locx, locy, 231, 57, 318,125, 0x898a95, 3, Fast
 MouseMove, locx, locy, 0
 MouseClick, Right
 
-ImageSearch, x, y, 0,0,764,501,%A_ScriptDir%\lastteleport.png
+ImageSearch, x, y, 0,0,764,501,%A_ScriptDir%\img\lastteleport.png
 if(x>0){
 	MouseMove, x, y, 0
 	MouseClick, Left
@@ -60,7 +60,7 @@ MouseMove, 296, 299, 0
 Sleep, 8000
 Click, Left
 Send, {F4}
-ImageSearch, x, y, 0,0,764,501,%A_ScriptDir%\hometeleport.png
+ImageSearch, x, y, 0,0,764,501,%A_ScriptDir%\img\hometeleport.png
 if(x>0){
 	MouseMove, x, y, 0
 	MouseClick, Left

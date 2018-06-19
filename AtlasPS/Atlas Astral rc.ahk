@@ -43,7 +43,7 @@ Loop{
 		MouseMove, locx, locy, 0
 		MouseClick, Right
 		
-		ImageSearch, x, y, 0,0,764,501,%A_ScriptDir%\lastteleport.png
+		ImageSearch, x, y, 0,0,764,501,%A_ScriptDir%\img\lastteleport.png
 		if(x>0){
 			MouseMove, x, y, 0
 			MouseClick, Left

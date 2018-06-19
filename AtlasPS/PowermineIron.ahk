@@ -34,7 +34,7 @@ ActiveText = Finding Rocks (%i%/20) mined
 GuiControl,,MT, %ActiveText%
 		MouseMove, locx, locy, 0
 		MouseClick, Right
-		ImageSearch, x, y, 0,0,764,501,%A_ScriptDir%\minerocks.png
+		ImageSearch, x, y, 0,0,764,501,%A_ScriptDir%\img\minerocks.png
 		if(x>0){
 			MouseMove, x, y, 0
 			MouseClick, Left
@@ -57,7 +57,7 @@ GuiControl,,MT, %ActiveText%
 ActiveText = Dropping rocks
 GuiControl,,MT, %ActiveText%
 		Loop, 40{
-			ImageSearch, x, y, 0,0,764,501,%A_ScriptDir%\ironore.png
+			ImageSearch, x, y, 0,0,764,501,%A_ScriptDir%\img\ironore.png
 			if(x>0){
 				MouseMove, x, y, 0
 				Sendinput, {Shift down}

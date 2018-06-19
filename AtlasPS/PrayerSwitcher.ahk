@@ -3,7 +3,7 @@
 1:: ;pray magic
 Send, {F3}
 
-ImageSearch, x, y, 0,0,764,501,%A_ScriptDir%\praymagic.png
+ImageSearch, x, y, 0,0,764,501,%A_ScriptDir%\img\praymagic.png
 
 if(x>0)
 	BlockInput, On
@@ -15,7 +15,7 @@ if(x>0)
 return
 2:: ;pray range
 Send, {F3}
-ImageSearch, x, y, 0,0,764,501,%A_ScriptDir%\prayrange.png
+ImageSearch, x, y, 0,0,764,501,%A_ScriptDir%\img\prayrange.png
 
 if(x>0)
 	BlockInput, On
@@ -29,7 +29,7 @@ return
 
 3:: ;pray melee
 Send, {F3}
-ImageSearch, x, y, 0,0,764,501,%A_ScriptDir%\praymelee.png
+ImageSearch, x, y, 0,0,764,501,%A_ScriptDir%\img\praymelee.png
 
 if(x>0)
 	MouseMove, x, y, 0
