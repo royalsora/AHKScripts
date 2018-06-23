@@ -1,4 +1,6 @@
-﻿charterColor = 0x230034
+﻿
+#include util/Methods.ahk
+charterColor = 0x230034
 
 option = 7
 cr = 
@@ -56,25 +58,25 @@ Sleep, 5000
 ;MouseMove, 690, 142, 0
 ;MouseClick, Left
 
-MouseMove, 477,357,0
+MouseMove, 477,357,3
 MouseClick, Left
 	
-Sleep, 2000
+Sleep, Rand(3000, 5000)
 
-MouseMove, 513,298,0
+MouseMove, 402,160,3
 MouseClick, Left
 
-Sleep, 3000
+Sleep, Rand(3000, 4000)
 
 Send, {F2}
 Sleep, 100
-	ImageSearch, cx, cy, 0,0,781,541,%A_ScriptDir%\craftcape.png
+	ImageSearch, cx, cy, 0,0,781,541,%A_ScriptDir%\img\craftcape.png
 	
 	if(cx>0){
 			MouseMove, cx,cy,0
 			MouseClick, right
 			Sleep, 100
-			ImageSearch, tx, ty, 0,0,781,541,%A_ScriptDir%\crafttp.png
+			ImageSearch, tx, ty, 0,0,781,541,%A_ScriptDir%\img\crafttp.png
 			if(tx>0){
 					MouseMove, tx,ty,0
 					MouseClick, Left
@@ -83,23 +85,25 @@ Sleep, 100
 	}
 	Sleep, 4000
 	;PixelSearch, bankx, banky, 236, 174, 319, 231, 0x1A5069,3, Fast
-	ImageSearch, nessx, nessy, 0,0,781,541,%A_ScriptDir%\ness.png
+	ImageSearch, nessx, nessy, 0,0,781,541,%A_ScriptDir%\img\ness.png
 	
 	if(nessx > 0){
 			MouseMove, nessx,nessy, 0
 			MouseClick, Left
-			Sleep, 400
+			Sleep, Rand(400,500)
 			;if(bankx > 0){
 					;MouseMove, bankx, banky, 0
-					MouseMove, 294,206,0
+					MouseMove, 294,206,3
+					Sleep, Rand(600,1299)
 					MouseClick, Right
-					Sleep, 400
-					ImageSearch eobx, eoby, 0,0,764,501,%A_ScriptDir%\essonbank.png
+					Sleep, Rand(400,500)
+					ImageSearch eobx, eoby, 0,0,764,501,%A_ScriptDir%\img\essonbank.png
 					if(eobx>0){
 							MouseMove, eobx, eoby, 0
 							MouseClick, Left
-							Sleep, 600
-							Send, 28098456
+							Sleep, Rand(600, 1200)
+							Send, 111111111
+							Sleep, Rand(50, 150)
 							Send, {enter}
 					}
 			;}
@@ -109,7 +113,7 @@ Sleep, 100
 	Send, {F4}
 	Sleep, 600
 	
-					ImageSearch hx, hy, 0,0,764,501,%A_ScriptDir%\hometeleport.png
+					ImageSearch hx, hy, 0,0,764,501,%A_ScriptDir%\img\hometeleport.png
 	
 	if(hx>0){
 			Mousemove, hx, hy, 0
