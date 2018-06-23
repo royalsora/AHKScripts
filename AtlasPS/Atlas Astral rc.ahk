@@ -53,7 +53,7 @@ Loop{
 			}
 	}
 
-Sleep, 5000
+Sleep, Rand(5000, 12000)
 	
 ;MouseMove, 690, 142, 0
 ;MouseClick, Left
@@ -69,13 +69,13 @@ MouseClick, Left
 Sleep, Rand(3000, 4000)
 
 Send, {F2}
-Sleep, 100
+Sleep, Rand(100,500)
 	ImageSearch, cx, cy, 0,0,781,541,%A_ScriptDir%\img\craftcape.png
 	
 	if(cx>0){
 			MouseMove, cx,cy,0
 			MouseClick, right
-			Sleep, 100
+			Sleep, Rand(100,500)
 			ImageSearch, tx, ty, 0,0,781,541,%A_ScriptDir%\img\crafttp.png
 			if(tx>0){
 					MouseMove, tx,ty,0
