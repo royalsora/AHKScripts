@@ -7,7 +7,7 @@ portalColor = 0x8D778D
  
 i := 0
  
-ActiveText = CREATED BY JAN JULIUS TO DO AGILITYYYYYYY
+ActiveText = CREATED BY JAN JULIUS TO DO AGILITYYYYYYY sometimes fucks up at the home teleporter.
  
 ;
 ;Gui, Color, Black
