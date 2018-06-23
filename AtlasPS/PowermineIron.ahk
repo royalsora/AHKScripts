@@ -1,9 +1,11 @@
-﻿3::ExitApp
+﻿#include util/Methods.ahk
+
+3::ExitApp
 
 1::
 IfWinActive, Atlas #163.7
 {
-rockColor = 0x0D1522
+rockColor = 0x1A2239
 
 i := 0
 
@@ -48,12 +50,12 @@ GuiControl,,MT, %ActiveText%
 ActiveText = Mining rock %i% (%i%/20) mined
 GuiControl,,MT, %ActiveText%
 		
-		Sleep, 4000
+		Sleep, Rand(2000, 2500)
 		i++
 		ToolTip, %i%
 	}
 	
-	if(i >= 15){
+	if(i >= 5){
 ActiveText = Dropping rocks
 GuiControl,,MT, %ActiveText%
 		Loop, 40{
