@@ -55,11 +55,47 @@ GuiControl,,MT, %ActiveText%
 		ToolTip, %i%
 	}
 	
-	if(i >= 5){
+	if(i >= 1){
 ActiveText = Dropping rocks
 GuiControl,,MT, %ActiveText%
 		Loop, 40{
 			ImageSearch, x, y, 0,0,764,501,%A_ScriptDir%\img\ironore.png
+			if(x>0){
+				MouseMove, x, y, 0
+				Sendinput, {Shift down}
+				MouseClick, Left
+				SendInput, {Shift up}
+			}
+		}
+		Loop, 40{
+			ImageSearch, x, y, 0,0,764,501,%A_ScriptDir%\img\uncruby.png
+			if(x>0){
+				MouseMove, x, y, 0
+				Sendinput, {Shift down}
+				MouseClick, Left
+				SendInput, {Shift up}
+			}
+		}
+		Loop, 40{
+			ImageSearch, x, y, 0,0,764,501,%A_ScriptDir%\img\uncsapphire.png
+			if(x>0){
+				MouseMove, x, y, 0
+				Sendinput, {Shift down}
+				MouseClick, Left
+				SendInput, {Shift up}
+			}
+		}
+		Loop, 40{
+			ImageSearch, x, y, 0,0,764,501,%A_ScriptDir%\img\uncemerald.png
+			if(x>0){
+				MouseMove, x, y, 0
+				Sendinput, {Shift down}
+				MouseClick, Left
+				SendInput, {Shift up}
+			}
+		}
+		Loop, 40{
+			ImageSearch, x, y, 0,0,764,501,%A_ScriptDir%\img\uncdiamond.png
 			if(x>0){
 				MouseMove, x, y, 0
 				Sendinput, {Shift down}

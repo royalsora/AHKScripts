@@ -20,9 +20,8 @@ Loop, 27{ ;loop 27 times to fill inventory with gems
 			MouseClick, Left ;click
 		}
 	}
+	Sleep, Rand(2500, 3200) ;wait for stealing again
 }
-
-;go to shopkeepr and sell
 
 ;TODO move close to shop keeper
 ;find him based on hair color
