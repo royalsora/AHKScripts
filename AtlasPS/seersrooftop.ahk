@@ -30,45 +30,30 @@ ActiveText = CREATED BY JAN JULIUS TO DO AGILITYYYYYYY sometimes fucks up at the
 ;code
  
 Loop {
-PixelSearch, locx, locy, 231, 57, 318,125, 0x898a95, 3, Fast
- 
-MouseMove, locx, locy, 0
-MouseClick, Right
- 
-ImageSearch, x, y, 0,0,764,501,%A_ScriptDir%\lastteleport.png
-if(x>0){
-    MouseMove, x, y, 0
-    MouseClick, Left
-}
-2::
-MouseMove, 259, 162, 0
-Sleep, 6000
-Click, Left
-MouseMove, 42, 137
-Sleep, 5500
-Click, Left
-MouseMove, 169, 268, 0
-Sleep, 7000
-Click, Left
-MouseMove, 264, 296, 0
-Sleep, 3500
-Click, Left
-MouseMove, 264, 317, 0
-Sleep, 8500
-Click, Left
-MouseMove, 67, 299, 0
-Sleep, 5500
-Click, Left
-MouseMove, 296, 299, 0
-Sleep, 5500
-Click, Left
-Sleep, 3500
-Send, {F3}
-ImageSearch, x, y, 0,0,764,501,%A_ScriptDir%\hometeleport.png
-if(x>0){
-Sleep, 500
-    MouseMove, x, y, 0
-    MouseClick, Left
-Sleep, 4000
-}
+    TeleportToLastLocation()
+    2::
+    MouseMove, 259, 162, 0
+    Sleep, 6000
+    Click, Left
+    MouseMove, 42, 137
+    Sleep, 5500
+    Click, Left
+    MouseMove, 169, 268, 0
+    Sleep, 7000
+    Click, Left
+    MouseMove, 264, 296, 0
+    Sleep, 3500
+    Click, Left
+    MouseMove, 264, 317, 0
+    Sleep, 8500
+    Click, Left
+    MouseMove, 67, 299, 0
+    Sleep, 5500
+    Click, Left
+    MouseMove, 296, 299, 0
+    Sleep, 5500
+    Click, Left
+    Sleep, 3500
+    TeleportHome()
+    Sleep, 4000
 }
