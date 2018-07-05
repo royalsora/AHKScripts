@@ -47,8 +47,8 @@ Loop{
 	;MouseMove, 690, 142, 0
 	;MouseClick, Left
 
-	MouseMove, 477,357,3
-	MouseClick, Left
+	;MouseMove, 477,357,3
+	;MouseClick, Left
 
 	ClickLeft(477, 357, 0)
 		
