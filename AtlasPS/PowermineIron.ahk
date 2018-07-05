@@ -32,6 +32,7 @@ Loop{
 PixelSearch, locx, locy, 0, 0, 514,334, %rockColor%, 5, Fast
 
 	if(locx > 0){
+	
 ActiveText = Finding Rocks (%i%/20) mined
 GuiControl,,MT, %ActiveText%
 		MouseMove, locx, locy, 0
@@ -55,7 +56,7 @@ GuiControl,,MT, %ActiveText%
 		ToolTip, %i%
 	}
 	
-	if(i >= 1){
+	if(i >= 5){
 ActiveText = Dropping rocks
 GuiControl,,MT, %ActiveText%
 		Loop, 40{
@@ -67,7 +68,7 @@ GuiControl,,MT, %ActiveText%
 				SendInput, {Shift up}
 			}
 		}
-		Loop, 40{
+		Loop, 4{
 			ImageSearch, x, y, 0,0,764,501,%A_ScriptDir%\img\uncruby.png
 			if(x>0){
 				MouseMove, x, y, 0
@@ -76,7 +77,7 @@ GuiControl,,MT, %ActiveText%
 				SendInput, {Shift up}
 			}
 		}
-		Loop, 40{
+		Loop, 4{
 			ImageSearch, x, y, 0,0,764,501,%A_ScriptDir%\img\uncsapphire.png
 			if(x>0){
 				MouseMove, x, y, 0
@@ -85,7 +86,7 @@ GuiControl,,MT, %ActiveText%
 				SendInput, {Shift up}
 			}
 		}
-		Loop, 40{
+		Loop, 4{
 			ImageSearch, x, y, 0,0,764,501,%A_ScriptDir%\img\uncemerald.png
 			if(x>0){
 				MouseMove, x, y, 0
@@ -94,7 +95,7 @@ GuiControl,,MT, %ActiveText%
 				SendInput, {Shift up}
 			}
 		}
-		Loop, 40{
+		Loop, 4{
 			ImageSearch, x, y, 0,0,764,501,%A_ScriptDir%\img\uncdiamond.png
 			if(x>0){
 				MouseMove, x, y, 0
