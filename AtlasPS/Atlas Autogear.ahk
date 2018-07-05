@@ -19,7 +19,6 @@ dir1 = %A_ScriptDir%\autogear\gear.txt
         StringTrimRight, item, element, StrLen(element) - nm + 1
         gearArr.push(item)
         amntArr.push(amnt)
-        ToolTip, %amnt% %item%
     }
 
     loopSize := gearArr.MaxIndex()
