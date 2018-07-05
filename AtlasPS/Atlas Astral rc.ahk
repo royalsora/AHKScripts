@@ -1,5 +1,7 @@
 ﻿
 #include util/Methods.ahk
+#include util/JAHK.ahk
+
 charterColor = 0x230034
 
 option = 7
@@ -47,6 +49,8 @@ Loop{
 
 	MouseMove, 477,357,3
 	MouseClick, Left
+
+	ClickLeft(477, 357, 0)
 		
 	Sleep, Rand(3000, 5000)
 
