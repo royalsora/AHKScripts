@@ -26,6 +26,39 @@ ClickRight(x=-1, y=-1, speed=0){
     MouseClick, Right
 }
 
+#CommentFlag, Send message message when sent it will take in account if the delay parameter is defined or not
+SendMessage(message, delay=0){
+    Send, message
+    Sleep, delay
+    Send, {enter}
+}
+
+#CommentFlag, Returns file file as string array`
+FileToArray(file){
+    ToolTip, %file%
+    arr := [] 
+    Loop, Read, %file%
+    {
+        arr.Push(%A_LoopReadLine%)
+    }
+    return arr
+}
+
+#CommentFlag, Sleep for amnt in ms
+Snore(amnt){
+    Sleep, %amnt%
+}
+
+#CommentFlag, finds largest item in array array
+ArrSize(Array)
+{
+	For each, item in Array
+		If (StrLen(item) > MaxLength)
+			MaxLength := StrLen(item)
+	return MaxLength
+}
+
+
 /*#CommentFlag, Scroll Down with amount speed
 ScrollDown(speed=0){
     if(speed > 0){
@@ -49,29 +82,3 @@ ScrollUp(speed=0){
 }
 
 */
-
-#CommentFlag, Returns file file as string array`
-FileToArray(file){
-    ToolTip, %file%
-    arr := [] 
-    Loop, Read, %file%
-    {
-        arr.Push(%A_LoopReadLine%)
-    }
-    return arr
-}
-
-
-#CommentFlag, Sleep for amnt in ms
-Snore(amnt){
-    Sleep, %amnt%
-}
-
-#CommentFlag, finds largest item in array array
-ArrSize(Array)
-{
-	For each, item in Array
-		If (StrLen(item) > MaxLength)
-			MaxLength := StrLen(item)
-	return MaxLength
-}
