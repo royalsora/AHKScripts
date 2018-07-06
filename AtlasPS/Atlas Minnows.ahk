@@ -13,7 +13,7 @@ Loop{
             ImageSearch, ix, iy, 0, 0,FixedScreenSizeX, FixedScreenSizeY, %A_ScriptDir%\img\netfishingspot.png
             if( ix > 0){
                 ClickLeft(ix, iy, 0)
-                Snore(15000)
+                Snore(Rand(15000, 20000))
                 continue
             }
     }
