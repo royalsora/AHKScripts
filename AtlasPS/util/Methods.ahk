@@ -34,3 +34,19 @@ TeleportHome(){
 				MouseClick, Left
 		}
 }
+
+CraftingCapeTeleport(){
+	Send, {F2}
+		ImageSearch, cx, cy, 0,0,781,541,%A_ScriptDir%\img\craftcape.png
+		
+		if(cx>0){
+				MouseMove, cx,cy,0
+				MouseClick, right
+				ImageSearch, tx, ty, 0,0,781,541,%A_ScriptDir%\img\crafttp.png
+				if(tx>0){
+						MouseMove, tx,ty,0
+						MouseClick, Left
+						Send,{F1}
+				}
+		}
+}
