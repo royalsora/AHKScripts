@@ -1,1 +1,3 @@
-Abyssal whip,1
+amethyst bolt tips,1
+dragon med helm,1
+ashes,1
