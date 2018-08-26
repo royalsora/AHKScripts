@@ -3,7 +3,7 @@
 3::ExitApp
 
 1::
-IfWinActive, Atlas #163.7
+IfWinActive, Atlas
 {
 rockColor = 0x1A2239
 

@@ -27,7 +27,6 @@ Gui, font, s20 bold, Calibri
 
 Gui, add,text, vBN cWhite TransColor, Ironman crafting trainer
 Gui, add, text, vMT cWhite TransColor, %ActiveText%
-;Gui, add, text, vCredits cWhite TransColor, Created By: Jan Julius
 
 WinGetPos, winX, winY, winW, winH, A
 
@@ -43,13 +42,7 @@ Loop{
 	TeleportToLastLocation()
 
 	Sleep, Rand(5000, 12000)
-		
-	;MouseMove, 690, 142, 0
-	;MouseClick, Left
-
-	;MouseMove, 477,357,3
-	;MouseClick, Left
-
+	
 	ClickLeft(477, 357, 0)
 		
 	Sleep, Rand(3000, 5000)
@@ -59,21 +52,8 @@ Loop{
 
 	Sleep, Rand(3000, 4000)
 
-	Send, {F2}
-	Sleep, Rand(100,500)
-		ImageSearch, cx, cy, 0,0,781,541,%A_ScriptDir%\img\craftcape.png
-		
-		if(cx>0){
-				MouseMove, cx,cy,0
-				MouseClick, right
-				Sleep, Rand(100,500)
-				ImageSearch, tx, ty, 0,0,781,541,%A_ScriptDir%\img\crafttp.png
-				if(tx>0){
-						MouseMove, tx,ty,0
-						MouseClick, Left
-						Send,{F1}
-				}
-		}
+	
+CraftingCapeTeleport()
 		Sleep, 4000
 		ImageSearch, nessx, nessy, 0,0,781,541,%A_ScriptDir%\img\ness.png
 		
