@@ -2,7 +2,7 @@
 
 
 1::
-amountOfSwitches=5 ;switches downward
+amountOfSwitches=4 ;switches downward
 
 loopA := Ceil(amountOfSwitches /= 2)
 loopB := Floor(amountOfSwitches /= 2)

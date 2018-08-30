@@ -1,7 +1,7 @@
 ﻿#include util/Methods.ahk
+#include util/JAHK.ahk
 3::
-CraftingCapeTeleport()
-Return
-
+TeleportHome()
+return
 4::ExitApp
 
