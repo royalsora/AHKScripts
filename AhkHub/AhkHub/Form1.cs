@@ -75,7 +75,7 @@ namespace AhkHub
 
         private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
         {
-
+            comboBox2.Items.Clear();
             comboBox2.Items.AddRange(GetAhkFilesInFolder(new DirectoryInfo(maindir.ToString() + "\\" + comboBox1.SelectedItem.ToString())).ToArray());
             comboBox2.Update();
             
