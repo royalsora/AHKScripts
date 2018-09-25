@@ -1,0 +1,10 @@
+E:\AutoHotKeyScripts\AhkHub\AhkHub\obj\Debug\AhkHub.csprojAssemblyReference.cache
+E:\AutoHotKeyScripts\AhkHub\AhkHub\obj\Debug\AhkHub.Form1.resources
+E:\AutoHotKeyScripts\AhkHub\AhkHub\obj\Debug\AhkHub.Properties.Resources.resources
+E:\AutoHotKeyScripts\AhkHub\AhkHub\obj\Debug\AhkHub.csproj.GenerateResource.cache
+E:\AutoHotKeyScripts\AhkHub\AhkHub\obj\Debug\AhkHub.csproj.CoreCompileInputs.cache
+E:\AutoHotKeyScripts\AhkHub\AhkHub\bin\Debug\AhkHub.exe.config
+E:\AutoHotKeyScripts\AhkHub\AhkHub\bin\Debug\AhkHub.exe
+E:\AutoHotKeyScripts\AhkHub\AhkHub\bin\Debug\AhkHub.pdb
+E:\AutoHotKeyScripts\AhkHub\AhkHub\obj\Debug\AhkHub.exe
+E:\AutoHotKeyScripts\AhkHub\AhkHub\obj\Debug\AhkHub.pdb
