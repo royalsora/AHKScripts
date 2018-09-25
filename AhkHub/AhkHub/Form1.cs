@@ -15,6 +15,7 @@ namespace AhkHub
     public partial class Form1 : Form
     {
         private DirectoryInfo maindir = null;
+        private string SelectedScript = null;
         public Form1()
         {
             InitializeComponent();
@@ -76,6 +77,7 @@ namespace AhkHub
         private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
         {
             comboBox2.Items.Clear();
+            SelectedScript = null;
             comboBox2.Items.AddRange(GetAhkFilesInFolder(new DirectoryInfo(maindir.ToString() + "\\" + comboBox1.SelectedItem.ToString())).ToArray());
             comboBox2.Update();
             
@@ -99,6 +101,16 @@ namespace AhkHub
                 return r;
             }
             return null;
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            //execute script
+        }
+
+        private void comboBox2_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            //SelectedScript = comboBox2.SelectedIndex;
         }
     }
 }
